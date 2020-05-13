@@ -1,0 +1,1 @@
+export const SECONDARY_PAGE_URL = '/secondary'
