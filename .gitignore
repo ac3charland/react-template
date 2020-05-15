@@ -12,6 +12,9 @@
 backstop/main/images/test
 backstop/main/reports
 
+#cypress
+cypress/screenshots
+
 # production
 /build
 

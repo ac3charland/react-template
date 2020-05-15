@@ -29,11 +29,18 @@ module.exports = {
                 mount: 'readonly',
                 shallow: 'readonly',
                 cy: 'readonly',
+                context: 'readonly'
             },
             rules: {
                 'react/react-in-jsx-scope': 'off'
             }
         },
+        {
+            files: ['*.spec.js'],
+            rules: {
+                'jest/expect-expect': 'off'
+            }
+        }
     ],
     plugins: [
         'react'

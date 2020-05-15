@@ -20,7 +20,9 @@
     "backstop:test": "sh backstop/run-backstop.sh test",
     "backstop:report": "sh backstop/run-backstop.sh openReport",
     "backstop:approve": "sh backstop/run-backstop.sh approve",
-    "test": "yarn run jest && yarn run lint"
+    "cypress:open": "sh cypress/run-cypress.sh case:open",
+    "cypress:test": "sh cypress/run-cypress.sh",
+    "test:ci": "yarn run jest && yarn run lint"
   },
   "eslintConfig": {
     "extends": "react-app"
