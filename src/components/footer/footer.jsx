@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.scss'
 import moment from 'moment'
 
-const cb='footer'
+const cb = 'footer'
 
 export default function Footer(props) {
     return (

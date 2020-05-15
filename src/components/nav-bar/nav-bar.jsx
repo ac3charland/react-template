@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import './nav-bar.scss'
-import { SECONDARY_PAGE_URL } from '../../utils/constants'
+import {SECONDARY_PAGE_URL} from '../../utils/constants'
 
 const cb = 'navbar'
 
@@ -13,7 +13,7 @@ export default class NavBar extends Component {
         }
     }
 
-    toggleMenu = () => {
+    toggleMenu() {
         this.setState({
             menuOpen: !this.state.menuOpen,
         })

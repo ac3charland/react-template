@@ -14,5 +14,6 @@ describe('Footer', () => {
     it('renders without crashing', () => {
         const component = render()
         expect(component.find(`.${cb}`).length).toEqual(1)
+        expect(component.find(`.${cb}__text`).text()).toEqual('Copyright © 2020 [CHANGE_ME_SITE_COMPANY_HERE]')
     })
 })
