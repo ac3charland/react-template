@@ -28,7 +28,7 @@ export default class NavBar extends Component {
                 <a className={`${cb}__home`} href='/'><h1 className={`${cb}__heading`}>[CHANGE_ME_SITE_TITLE]</h1></a>
                 <div className={`${cb}__links ${menuCSS}`}>
                     <button className={`icon ${menuCSS}`} onClick={() => this.toggleMenu()}><i className={`fa ${menuIcon}`}></i></button>
-                    <a className={`${cb}__link ${menuCSS}`} href={SECONDARY_PAGE_URL}>CHANGE_ME SECONDARY_LINK</a>
+                    <a id={'secondary-link'} className={`${cb}__link ${menuCSS}`} href={SECONDARY_PAGE_URL}>CHANGE_ME SECONDARY_LINK</a>
                 </div>
             </div>
         )

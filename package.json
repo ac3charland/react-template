@@ -12,10 +12,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-background": "if ! nc -z localhost 3000; then nohup yarn start > /tmp/npm-start.log 2>&1 & sleep 5; fi",
     "build": "react-scripts build",
     "jest": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx --ext .js src cypress",
+    "backstop:test": "sh backstop/run-backstop.sh test",
+    "backstop:report": "sh backstop/run-backstop.sh openReport",
+    "backstop:approve": "sh backstop/run-backstop.sh approve",
     "test": "yarn run jest && yarn run lint"
   },
   "eslintConfig": {
@@ -34,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "backstopjs": "4.3.4",
     "cypress": "^4.5.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
