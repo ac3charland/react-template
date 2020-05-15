@@ -11,8 +11,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start-background": "if ! nc -z localhost 3000; then nohup yarn start > /tmp/npm-start.log 2>&1 & sleep 5; fi",
+    "start": "BROWSER=none react-scripts start",
+    "start-background": "pm2 start npm -- start",
+    "kill-background": "pm2 delete npm",
     "build": "react-scripts build",
     "jest": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
@@ -22,7 +23,8 @@
     "backstop:approve": "sh backstop/run-backstop.sh approve",
     "cypress:open": "sh cypress/run-cypress.sh case:open",
     "cypress:test": "sh cypress/run-cypress.sh",
-    "test:ci": "yarn run jest && yarn run lint"
+    "test:ci": "yarn run jest && yarn run lint && yarn run cypress:test",
+    "test": "yarn run backstop:test && yarn run test:ci"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +48,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint-plugin-jest": "^23.11.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.20.0"
+    "eslint-plugin-react": "^7.20.0",
+    "pm2": "^4.4.0"
   }
 }

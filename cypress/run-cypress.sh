@@ -2,8 +2,8 @@
 
 testExitCode=0
 
-pkill node
-# yarn run start-background
+yarn run kill-background
+yarn run start-background
 
 case "$1" in
     case:open)
