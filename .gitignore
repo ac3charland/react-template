@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+#backstop
+backstop/main/images/test
+backstop/main/reports
+
 # production
 /build
 
