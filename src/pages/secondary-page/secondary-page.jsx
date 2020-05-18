@@ -6,7 +6,8 @@ const cb = 'secondary'
 export default function SecondaryPage() {
     return (
         <div className={cb}>
-            Short secondary page! (Footer sticks to bottom)
+            <h1 className={`${cb}__heading`}>Short secondary page!</h1> 
+            <p>(Footer sticks to bottom)</p>
         </div>
     )
 }

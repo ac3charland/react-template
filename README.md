@@ -37,13 +37,14 @@ There are several fields which will be different for every app, like site title,
 The app's JSX files are categorized into pages and components. The app's overall styles are set in `index.scss` and its style constants are defined in `globals.scss`. Each `.scss` file should import `globals.scss`.
 
 ## Technologies
-1. **UI Framework**: [React](https://reactjs.org/) (using Create React App)
-2. **Package Manager**: [Yarn](https://yarnpkg.com/)
-3. **Routing**: [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
-4. **CSS Processor**: [SASS](https://sass-lang.com/)
+0. **UI Framework**: [React](https://reactjs.org/) (using Create React App)
+0. **State Manager**: [Redux](https://redux.js.org/)
+0. **Package Manager**: [Yarn](https://yarnpkg.com/)
+0. **Routing**: [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
+0. **CSS Processor**: [SASS](https://sass-lang.com/)
 
 ## Testing Frameworks
-1. **Unit Tests**: [Jest](https://jestjs.io/)/[Enzyme](https://github.com/enzymejs/enzyme)
-2. **Linter**: [ESLint](https://eslint.org/)
-3. **Visual Regression Tests**: [BackstopJS](https://garris.github.io/BackstopJS/)
-4. **Integration Tests**: [Cypress](https://www.cypress.io/)
+0. **Unit Tests**: [Jest](https://jestjs.io/)/[Enzyme](https://github.com/enzymejs/enzyme)
+0. **Linter**: [ESLint](https://eslint.org/)
+0. **Visual Regression Tests**: [BackstopJS](https://garris.github.io/BackstopJS/)
+0. **Integration Tests**: [Cypress](https://www.cypress.io/)
