@@ -7,9 +7,11 @@ This app is meant to serve as the basis for my future React apps. It has my pref
 0. Clone this project if it is not already on your machine.
 0. When you want to create a new app based on this template, create a new directory for the project with `mkdir [new-project-name-here]`
 0. Copy/paste this repo's files & folders into the new directory.
+    - Make sure you copy the hidden `.eslintrc.js` and `.gitignore` files. However, you probably don't want to copy the `.git` or `node_modules/` directories.
 0. Install packages with `yarn`
 0. Confirm everything is working as expected by running `yarn run test`
 0. Setup the new project's git repo with `git init`
+    - At this point, if you don't want to commit a bunch of CHANGE_ME variable names, you should change these values. See **"To Customize"** below.
 0. Create an initial commit with `git add . && git commit -m "Initial commit from template app"`.
 0. Create a new remote repository for the app on your preferred host (GitHub, Bitbucket, etc.)
 0. Add the remote origin with `git remote add origin [url-provided-by-repo]`
@@ -34,7 +36,7 @@ There are several fields which will be different for every app, like site title,
 - Open integration tests: `yarn run cypress:open`
 
 ## Project Structure
-The app's JSX files are categorized into pages and components. The app's overall styles are set in `index.scss` and its style constants are defined in `globals.scss`. Each `.scss` file should import `globals.scss`.
+The app's JSX files are categorized into pages and components. Redux actions and reducers are housed in their own directories as well. The app's overall styles are set in `index.scss` and its style constants are defined in `globals.scss`. Each `.scss` file should import `globals.scss`. Linter preferences are defined in `.eslintrc.js` and unit test setup is performed in `setupTests.js`. Backstop and Cypress tests are configured in their own top-level directories.
 
 ## Technologies
 0. **UI Framework**: [React](https://reactjs.org/) (using Create React App)
