@@ -14,7 +14,7 @@ module.exports = backstop.config({
         },
         {
             label: 'small-view',
-            width: 500,
+            width: 320,
             height: 568
         },
     ],
