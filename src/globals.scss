@@ -11,6 +11,10 @@ $font-size-large: 1.5rem;
 $font-size-normal: 1.3rem;
 $font-size-small: 1.1rem;
 
+$secondary-background-color: lightgray;
+$link-color: black;
+$link-hover-color: darkgray;
+
 @mixin small-screen {
     @media (max-width: 700px) {
         @content;
@@ -54,8 +58,6 @@ $font-size-small: 1.1rem;
   -o-transition: $args;
   transition: $args;
 }
-
-$secondary-background-color: lightgray;
 
 @include keyframes(fadeInFromNone) {
     0% {
