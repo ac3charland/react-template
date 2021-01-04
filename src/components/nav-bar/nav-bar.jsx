@@ -10,7 +10,9 @@ export default class NavBar extends Component {
         super(props)
         this.state = {
             menuOpen: false,
+            navBarActive: false,
         }
+        window.addEventListener('scroll', this.changeBackground)
     }
 
     toggleMenu() {
@@ -18,13 +20,25 @@ export default class NavBar extends Component {
             menuOpen: !this.state.menuOpen,
         })
     }
+
+    changeBackground = () => {
+        const navBarHeight = 25
+        // TODO - Make navbar height dynamic
+        if (window.scrollY >= navBarHeight && !this.state.navBarActive) {
+            this.setState({navBarActive: true})
+        }
+        else if (window.scrollY < navBarHeight && this.state.navBarActive) {
+            this.setState({navBarActive: false})
+        }
+    }
+
     
     render() {
         const menuCSS = this.state.menuOpen ? 'open' : 'closed'
         const menuIcon = this.state.menuOpen ? 'fa-times' : 'fa-bars'
 
         return (
-            <div className={cb}>
+            <div id='nav-bar' className={`${cb} ${this.state.navBarActive ? 'active' : ''}`}>
                 <a className={`${cb}__home`} href='/'><h1 className={`${cb}__heading`}>[CHANGE_ME_SITE_TITLE]</h1></a>
                 <div className={`${cb}__links ${menuCSS}`}>
                     <button className={`icon ${menuCSS}`} onClick={() => this.toggleMenu()}><i className={`fa ${menuIcon}`}></i></button>
