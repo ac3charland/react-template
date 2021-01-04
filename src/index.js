@@ -18,8 +18,8 @@ ReactDOM.render(
     <React.StrictMode>
       <Router>
         <div className='content-wrapper'>
+          <NavBar />
           <div className='flex'>
-            <NavBar />
             <div className='page-wrapper'>
               <Switch>
                 <Route exact path='/' component={ConnectedHomePage} />
