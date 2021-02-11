@@ -22,12 +22,11 @@ export default class NavBar extends Component {
     }
 
     changeBackground = () => {
-        const navBarHeight = 25
-        // TODO - Make navbar height dynamic
-        if (window.scrollY >= navBarHeight && !this.state.navBarActive) {
+        const navBarChangeHeight = 20
+        if (window.scrollY >= navBarChangeHeight && !this.state.navBarActive) {
             this.setState({navBarActive: true})
         }
-        else if (window.scrollY < navBarHeight && this.state.navBarActive) {
+        else if (window.scrollY < navBarChangeHeight && this.state.navBarActive) {
             this.setState({navBarActive: false})
         }
     }

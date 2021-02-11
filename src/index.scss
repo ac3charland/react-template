@@ -75,17 +75,12 @@ a {
 .content-wrapper {
   position: relative;
   font-size: $font-size-normal;
-  // TODO make this height dynamically match the navbar height
-  min-height: calc(100vh - 5rem);
 }
 
 .flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // TODO DRY up code
-  min-height: calc(100vh - 5rem);
-  margin-top: 5rem;
 }
 
 .page-wrapper {
