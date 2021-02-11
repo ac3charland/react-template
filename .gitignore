@@ -14,6 +14,8 @@ backstop/main/reports
 
 #cypress
 cypress/screenshots
+cypress/snapshots/actual
+cypress/snapshots/diff
 
 # production
 /build
