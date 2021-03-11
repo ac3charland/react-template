@@ -7,7 +7,7 @@ This app is meant to serve as the basis for my future React apps. It has my pref
 0. Clone this project if it is not already on your machine.
 0. When you want to create a new app based on this template, create a new directory for the project with `mkdir [new-project-name-here]`
 0. Copy/paste this repo's files & folders into the new directory.
-    - Make sure you copy the hidden `.eslintrc.js` and `.gitignore` files. However, you probably don't want to copy the `.git` or `node_modules/` directories.
+    - Make sure you copy the hidden `.eslintrc.js` and `.gitignore` files. (Display these in Finder by hitting Command + Shift + . ) However, you probably don't want to copy the `.git` or `node_modules/` directories.
 0. Install packages with `npm i`
 0. Confirm everything is working as expected by running `npm run test`
 0. Setup the new project's git repo with `git init`
