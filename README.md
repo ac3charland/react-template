@@ -18,7 +18,7 @@ This app is meant to serve as the basis for my future React apps. It has my pref
 0. Commit to remote with `git push -u origin master`
 0. Begin development!
 
-<sup>*If these instructions seem patronizingly specific, it's not because I don't trust your capabilities--I don't trust my own. I've burned myself one too many times by telling myself "Surely I'll remember how to do *this* forever!"</sup>
+<sup>*If these instructions seem overly specific, it's because I don't trust my own memory--not because I don't trust your capabilities. I've been burned one too many times by telling myself "Surely I'll remember how to do *this* forever!" As a result I lean toward excess specificity in things like this, just in case.</sup>
 
 ## To Customize:
 There are several fields which will be different for every app, like site title, footer copyright owner, site icon, etc. Find these by searching for `CHANGE_ME` across the entire app directory, including file names. Change these fields/files.
