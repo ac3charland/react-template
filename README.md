@@ -15,7 +15,7 @@ This app is meant to serve as the basis for my future React apps. It has my pref
 0. Create an initial commit with `git add . && git commit -m "Initial commit from template app"`.
 0. Create a new remote repository for the app on your preferred host (GitHub, Bitbucket, etc.)
 0. Add the remote origin with `git remote add origin [url-provided-by-repo]`
-0. Commit to remote with `git push -u origin master`
+0. Commit to remote with `git push -u origin main`
 0. Begin development!
 
 <sup>*If these instructions seem overly specific, it's because I don't trust my own memory--not because I don't trust your capabilities. I've been burned one too many times by telling myself "Surely I'll remember how to do *this* forever!" As a result I lean toward excess specificity in things like this, just in case.</sup>
