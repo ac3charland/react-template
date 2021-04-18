@@ -28,15 +28,13 @@ There are several fields which will be different for every app, like site title,
 - Start app: `npm start`
 - Start app in background using `pm2`: `npm run start-background`
 - Kill background app process: `npm run kill-background`
-- Run all tests (unit, visual, integration, and lint): `npm run test`
-- Run CI-only tests (all except visual): `npm run test:ci`
+- Run all tests (lint, unit, and integration/visual): `npm run test`
 - Run unit tests: `npm run jest`
 - Run lint: `npm run lint`
-- Run visual regression tests: `npm run backstop:test`
-- Open integration tests: `npm run cypress:open`
+- Open integration/visual tests: `npm run cypress:open`
 
 ## Project Structure
-The app's JSX files are categorized into pages and components. Redux actions and reducers are housed in their own directories as well. The app's overall styles are set in `index.scss` and its style constants are defined in `globals.scss`. Each `.scss` file should import `globals.scss`. Linter preferences are defined in `.eslintrc.js` and unit test setup is performed in `setupTests.js`. Backstop and Cypress tests are configured in their own top-level directories.
+The app's JSX files are categorized into pages and components. Redux actions and reducers are housed in their own directories as well. The app's overall styles are set in `index.scss` and its style constants are defined in `globals.scss`. Each `.scss` file should import `globals.scss`. Linter preferences are defined in `.eslintrc.js` and unit test setup is performed in `setupTests.js`. Cypress tests are configured in their own top-level directory.
 
 ## Technologies
 0. **UI Framework**: [React](https://reactjs.org/) (using Create React App)
@@ -48,5 +46,5 @@ The app's JSX files are categorized into pages and components. Redux actions and
 ## Testing Frameworks
 0. **Unit Tests**: [Jest](https://jestjs.io/)/[Enzyme](https://github.com/enzymejs/enzyme)
 0. **Linter**: [ESLint](https://eslint.org/)
-0. **Visual Regression Tests**: [BackstopJS](https://garris.github.io/BackstopJS/)
+0. **Visual Regression Tests**: [cypress-visual-regression](https://github.com/mjhea0/cypress-visual-regression#readme)
 0. **Integration Tests**: [Cypress](https://www.cypress.io/)
